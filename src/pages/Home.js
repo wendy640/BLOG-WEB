@@ -95,7 +95,7 @@ const Home = ({ setActive, user, active }) => {
 		setLastVisible(docSnapshot.docs[docSnapshot.docs.length - 1])
 	}
 
-	console.log('blogs', blogs)
+	// console.log('blogs', blogs)
 
 	const updateState = (docSnapshot) => {
 		const isCollectionEmpty = docSnapshot.size === 0
@@ -154,7 +154,7 @@ const Home = ({ setActive, user, active }) => {
 		if (!isNull(searchQuery)) {
 			searchBlogs()
 		}
-	}, [searchQuery])
+	})
 
 	if (loading) {
 		return <Spinner />

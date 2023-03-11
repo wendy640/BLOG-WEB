@@ -7,7 +7,7 @@ import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage'
 import {
 	addDoc,
 	collection,
-	getDoc,
+	// getDoc,
 	serverTimestamp,
 	doc,
 	updateDoc
@@ -132,7 +132,10 @@ setForm({ ...form, tags })
 		<div className="container-fluid mb-4">
 			<div className="container">
 				<div className="col-12">
-					<div className="text-center heading py-2">"Create Blog"</div>
+					<div className="text-center heading py-2">
+						{' '}
+						{id ? 'Update Blog' : 'Create Blog'}
+					</div>
 				</div>
 
 				<div className="row h-100 justify-content-center align-items-center">
