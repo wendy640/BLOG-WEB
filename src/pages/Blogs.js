@@ -29,7 +29,7 @@ const Blogs = ({ setActive }) => {
 		getBlogsData()
 		getTotalBlogs()
 		setActive('blogs')
-	}, [])
+	})
 
 	if (loading) {
 		return <Spinner />
