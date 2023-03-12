@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const Header = ({ setActive, active, user, handleLogout }) => {
+import transitions from 'bootstrap'
+
+const Header = ({ active, setActive, user, handleLogout }) => {
 	const userId = user?.uid
-	// console.log('name', userId)
-	// console.log('name', user?.displayName)
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-light">
 			<div className="container-fluid bg-faded padding-media">
